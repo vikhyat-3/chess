@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkChess</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--linking the css file to html-->
+    <script src="intro.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- -----------------------------       Navigation    -------------------------------       -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark " id="navigation">
+        <a class="navbar-brand" href="#"><img src="crown2.webp" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" align="right">
+            <a class="nav-item nav-link" href="#" id="home">Home 
+            <a class="nav-item nav-link" href="#history_start" id="history_button">History</a>
+            <a class="nav-item nav-link" href="#chess_pieces" id="pieces">Chess Pieces</a>
+            <a class="nav-item nav-link" href="#players-table" id="players">Players</a>
+            <a class="nav-item nav-link" href="#footer" id="about">About Us</a>
+        </div>
+        </div> 
+            <div class="social text-gray">
+                <a href="https://www.twitter.com" class='twitter'><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class='linkedin'><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class='Facebook'><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com" class='Youtube'><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- -----------------------------       Main    -------------------------------       -->
+    <container class="main">
+        <section class="chess_pic" align="center" id="home_page">
+            <img src="bo1.jpg">
+        </section>
+            <br><br><br>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;color: white;" ID="history_start">HISTORY</h1> <br>
+            <section class="content" >
+                <div class="row" id="history_box">
+                    
+                    <div class="col-sm-7" id="history_content">
+                        <br>
+                        <BR><BR>
+                        <p align="left">
+                            The history of chess goes back almost 1500 years. The game originated in northern India in the 6th century AD and spread to Persia. When the Arabs conquered Persia, chess was taken up by the Muslim world and subsequently, through the Moorish conquest of Spain, spread to Southern Europe.But in early Russia, the game came directly from the Khanates (muslim territories) to the south.
+                <br>
+                In Europe, the moves of the pieces changed in the 15th century. The modern game starts with these changes. In the second half of the 19th century, modern tournament play began. Chess clocks were first used in 1883, and the first world chess championship was held in 1886. The 20th century saw advances in chess theory, and the establishment of the World Chess Federation (FIDE). 
+                <br>Chess engines (programs that analyse and also play chess games on their own) have risen to great heights and are used vastly in top level tournaments these days.
+
+                        </p>
+                    </div>
+                    <div class="col-sm-5" style="color: white;">
+                        <img src="history.jpg" class="pic-hp">
+                    </div>
+                   
+                </div>
+            </section>
+            <br><br>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;color: white;" id="chess_pieces">THE CHESS PIECES</h1> <br>
+        
+        <section class="content" >
+            <div class="row" id="king">
+                <div class="col-sm-5" style="color: white;">
+                    <img src="king.jpg" class="pic-kp">
+                </div>
+                <div class="col-sm-7" id="king_content">
+                    <br>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">THE KING</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: &#8734
+                            <li>Movement: One box in any direction</li>
+                        </ul>
+                        The king is less powerful than almost every chess piece, but it is also unique: the king is the only piece that can never be captured! If a king is attacked, it is in <b>"check."</b>
+                        <br>
+                        A king cannot move into check (that is considered an illegal move), and if a king is put in check, it must get out of check. 
+                        <br>
+                        There are three ways to get out of check:
+                        <ol type="1)">
+
+                         <li>Move the king out of check</li><li>Block the check with another piece</li><li>Capture the piece putting the king in check.</li> 
+                        </ol>
+                        <b>If a king is in check and none of these options are legal, then a checkmate has occurred and the game is over!</b>
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="content" >
+            <div class="row" id="queen">
+                
+                <div class="col-sm-7" id="queen_content">
+                    <br>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">THE QUEEN</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: 9 points
+                            <li>Movement: Queens move diagonally, horizontally, or vertically any number of squares. They are unable to jump over pieces.</li>
+                        </ul>
+                        <br>
+                        The queen is considered as the most powerful piece in the game of chess.
+                        History has proven that many reigning queens could be ruthless when it came to battles and wars.<br>
+                        She is allowed to move in any direction and in as many squares as she wants.
+                        
+                        She is a combination of a bishop and a rook and thus is extremely versatile.
+                        <br>
+                        Since she can move freely across the board many players favor this piece over all others.
+                        <br>
+                        
+                    </p>
+                </div>
+                <div class="col-sm-5" style="color: white;">
+                    <img src="queen3.jpg" class="pic-qp">
+                </div>
+               
+            </div>
+        </section>
+
+
+        <section class="content" >
+            <div class="row" id="bishop">
+                <br>
+                <div class="col-sm-5" style="color: white;">
+                    <img src="bishop2.jpg" class="pic-bp">
+                </div>
+                <div class="col-sm-7" id="bishop_content">
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;"> BISHOP</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: 3 points
+                            <li>Movement: Bishops move diagonally any number of squares. They are unable to jump over pieces.</li>
+                        </ul>
+                        <br>
+                        The bishop stands close to the king and queen because it represents the church which many royal courts held near and dear to their hearts.
+                        <br>
+                        This is also considered as the third most powerful piece on the chess board because back in the day religion could influence many people, even without the help of the royal family.
+                        <br>
+                        Also, the bishop was considered next in line from the reigning king and queen in medieval Europe.<br>
+                        It is said to be of great value especially during the end games.
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+
+
+        <section class="content" >
+            <div class="row" id="knight">
+                
+                <br>
+                <div class="col-sm-7" id="knight_content">
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;"> KNIGHT</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: 3 points
+                            <li>Movement: Knights move in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically. They are the only piece able to jump over other pieces.</li>
+                        </ul>
+                        The knight pieces are the protective knights in the castle. The pieces are shaped like a horse because it is symbolic of what knights rode during battle.
+
+                        These are also protected by the tower because back in medieval times knights were affluent and only well-educated and upper-class warriors were considered as knights. 
+                        <br>
+                        The Knights also have the ability to leap over other pieces since knights rode on horses in real life. They are also the only pieces that can start the game instead of a pawn.
+                    </p>
+                </div>
+                <div class="col-sm-5" style="color: white;">
+                    <img src="knight.jpg" class="pic-np">
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="content" >
+            <div class="row" id="rook">
+                <div class="col-sm-5" style="color: white;">
+                    <img src="rook.jpg" class="pic-rp">
+                </div>
+                <div class="col-sm-7" id="rook_content">
+                    <br>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">ROOK</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: 5 points
+                            <li>Movement: Rooks move horizontally or vertically any number of squares. They are unable to jump over pieces. Rooks move when the king castles.</li>
+                        </ul>
+                        It is also known as a castle piece or a tower chess piece.
+                        <br>
+                        This piece is positioned on the corners of each player’s side. As the name “castle” suggests, this is the protective barrier or the walls that protect the higher-ranking pieces.
+                        <br>
+                        This is why they are placed on the sides to symbolize protection over royalty, in the same way as a castle or a tower protects those on the inside.
+                        <br>
+                        A rook is considered to be deadly when placed on open flanks in the game. A rook pair is considered to be a deadly duo.
+                    </p>
+                </div>
+               
+            </div>
+        </section>
+
+
+        <section class="content" >
+            <div class="row" id="pawn">
+                <div class="col-sm-7" id="pawn_content">
+                    <br>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;">PAWN</h1> <br>
+                    <p align="left">
+                        <ul type="disk">
+                            <li>Points worth: 1 point
+                            <li>Movement: Pawns move vertically forward one square, with the option to move two squares if they have not yet moved. Pawns are the only piece to capture different to how they normally move.</li>
+                        </ul>
+                        Each side has 8 pawns and they go in front of the other pieces. There is a debate about whether the pawns are the peasants who live outside of the castle walls or are the soldiers protecting the royal court behind them.
+                        <br>
+                        Either way, they are the first line of defense against invaders. In the game of chess, it is the pawn that usually moves first before a full battle ensues.
+                        <br>
+                        Pawns capture one square diagonally in a forward direction.
+                        Pawns are unable to move backward on captures or moves. Upon reaching the other side of the board a pawn promotes into any other piece, except for a king. Additionally, pawns can make a special move named En Passant.
+                        
+                    </p>
+                </div>
+
+                <div class="col-sm-5" style="color: white;">
+                    <img src="pawn.jpg" class="pic-pp">
+                </div>
+               
+            </div>
+        </section>
+    <!--------------------------------------------------       PLAYERS     -------------------------->
+    <br><br><br>
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center;color: white;" id="players-table">CURRENT PLAYER RANKINGS</h1> <br>
+    <section class="content">
+        <div class="table-responsive-sm">
+            <table class="table" align="center" border="gray">
+            <tr class="title">
+                <th class="Rank">Rank</th>
+                <th class="player_pic">Photo</th>
+                <th class="chess_player">Player</th>
+                <th class="rating">FIDE Rating</th>
+                <th class="country">Country</th>
+            </tr>
+            <tr class="first">
+                <td>1</td>
+                <td><img src="magnus.jpg"></td>
+                <td>Magnus Carlsen</td>
+                <td>2847</td>
+                <td>NOR</td>
+            </tr>
+            <tr class="second">
+                <td>2</td>
+                <td><img src="fabi.jpg"></td>
+                <td>Fabiano Caruana</td>
+                <td>2820</td>
+                <td>USA</td>
+            </tr>
+            <tr class="third">
+                <td>3</td>
+                <td><img src="ding.jpg"></td>
+                <td>Liren Ding</td>
+                <td>2799</td>
+                <td>CHN</td>
+            </tr>
+            <tr class="fourth">
+                <td>4</td>
+                <td><img src="nepo.jpg"></td>
+                <td>Ian Nepomniachtchi</td>
+                <td>2792</td>
+                <td>RUS</td>
+            </tr>
+            <tr class="fifth">
+                <td>5</td>
+                <td><img src="levi.jpg"></td>
+                <td>Levon Aronian</td>
+                <td>2781</td>
+                <td>ARM</td>
+            </tr>
+            <tr class="sixth">
+                <td>6</td>
+                <td><img src="giri.jpg"></td>
+                <td>Anish Giri</td>
+                <td>2780</td>
+                <td>NED</td>
+            </tr>
+            <tr class="seventh">
+                <td>7</td>
+                <td><img src="alex.jpg"></td>
+                <td>Alexander Grischuk</td>
+                <td>2776</td>
+                <td>RUS</td>
+            </tr>
+            <tr class="eight">
+                <td>8</td>
+                <td><img src="shakh.jpg"></td>
+                <td>Shakhriyar Mamedyarov</td>
+                <td>2770</td>
+                <td>AZE</td>
+            </tr>
+            <tr class="ninth">
+                <td>9</td>
+                <td><img src="wes.jpg"></td>
+                <td>Wesley So</td>
+                <td>2770</td>
+                <td>USA</td>
+            </tr>
+            <tr class="tenth">
+                <td>10</td>
+                <td><img src="radja.jpg"></td>
+                <td>Teimour Radjabov</td>
+                <td>2765</td>
+                <td>AZE</td>
+            </tr>
+            </table>
+          </div>
+    </section>
+    </container>
+    <footer id="footer">
+        <div class="copyright" align="center">
+          &copy;Copyrights<strong> ThinkChess</strong> . All Rights Reserved.<br>Designed by Team Dark Knights
+        </div>
+    </footer>  
+</body>
+</html>
+
+
+
